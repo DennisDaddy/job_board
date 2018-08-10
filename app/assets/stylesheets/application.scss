@@ -1,3 +1,4 @@
+// *= require trix
 @import "bulma";
 @import "functions";
 
@@ -7,4 +8,14 @@
 
 .notification:not(:last-child) {
   margin-bottom: 0;
+}
+
+.hint{
+	font-size: small;
+}
+
+.tag{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 9px !important;
 }
