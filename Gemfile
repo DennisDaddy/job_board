@@ -61,6 +61,7 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'stripe'
 gem 'trix'
+gem 'figaro'
 group :development, :test do
   gem 'better_errors'
   gem 'guard'
