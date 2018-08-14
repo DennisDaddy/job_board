@@ -29,17 +29,38 @@
         </div>        
       </div>
 
-      <div class="column"></div>
-    
-    
-    
-    <%= f.input :location %>
-    <%= f.input :job_author %>
-    <%= f.input :remote_ok %>
-    <%= f.input :apply_url %>
- 
+      <div class="column">
+         <div class="field">
+           <div class="control">
+            <%= f.input :location %>
+            </div>
+          </div>       
 
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
+
+          <div class="field">
+           <div class="control">
+           <%= f.input :job_author %>
+            </div>
+          </div>   
+
+           <div class="field">
+           <div class="control">
+            <%= f.input :remote_ok %>
+            </div>
+          </div>   
+
+           <div class="field">
+           <div class="control">
+           <%= f.input :apply_url %>
+            </div>
+          </div> 
+
+           <%= render 'payment' %>
+
+          <div class="form-actions">
+            <%= f.button :submit %>
+          </div>
+      </div>
+
+  
 <% end %>
