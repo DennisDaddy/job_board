@@ -35,6 +35,7 @@ document.addEventListener('turbolink:load', function(){
 	const form = document.getElementById('new_job');
 	form.addEventListener('submit', async (event) => {
 		event.preventDefault();
+
 	const {token, error} = await stripe.createToken(card);
 
 	if (error) {
@@ -56,7 +57,7 @@ document.addEventListener('turbolink:load', function(){
 		hiddenInput.setAttribute('value', token.id);
 		form.appendChild(hiddenInput);
 
-		["brand", "exp_month", "exp_year", "last4"].forEach(function(field)){
+		["brand", "exp_month", "exp_year", "last4"].forEach(function(field){
 			addFieldToForm(form, token, field);
 			});
 		form.submit();
